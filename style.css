@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+}
+
+/* Header Section */
+.header {
+  height: 300px;
+  background-image: url(Files/Images/BurgerHeader.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+/* Menu Section */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: black;
+}
+
+.menu-btn {
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+  padding: 12px 30px;
+  border: 2px solid #e74c3c;
+  border-radius: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btn:hover {
+  background-color: #e74c3c;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu-btn:focus {
+  outline: none;
+  border-color: #c0392b;
+}
+
+/* Image Container Section */
+.image-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Left and Right Image Sections */
+.image-left,
+.image-right {
+  flex: 0 1 auto; /* Ensures the image containers take only as much space as needed */
+  width: 25%; /* Adjusted width to make the images smaller */
+  height: 300px; /* Keeps the height consistent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-left img,
+.image-right img {
+  width: 100%; /* Makes the image fill the container width */
+  height: 100%; /* Ensures the image fills the container height */
+  object-fit: cover; /* Makes sure the image maintains its aspect ratio */
+  border-radius: 10px; /* Optional: rounds the corners of the images */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for depth */
+}
+
+/* Food Section */
+.food-section {
+  margin: 50px auto; /* Add spacing below the header */
+  padding: 20px;
+  max-width: 1200px; /* Optional: Limits the width of the section */
+  text-align: center;
+  background-color: #fff; /* Makes it stand out */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.food-section h2 {
+  margin-bottom: 20px;
+  color: #e74c3c;
+  font-size: 2rem;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+  gap: 20px; /* Space between the grid items */
+  justify-items: center; /* Centers the content inside each grid cell */
+}
+
+
+.food-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.food-item img {
+  width: 200px; /* Reduced width */
+  height: 200px; /* Reduced height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  margin-top: 10px; /* Adds space between the top of the food block and the image */
+}
+
+.food-item h3 {
+  margin: 10px 0 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.food-item p {
+  color: #e74c3c;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.food-item p {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
