@@ -77,9 +77,9 @@ body {
 /* Left and Right Image Sections */
 .image-left,
 .image-right {
-  flex: 0 1 auto; /* Ensures the image containers take only as much space as needed */
-  width: 25%; /* Adjusted width to make the images smaller */
-  height: 300px; /* Keeps the height consistent */
+  flex: 0 1 auto; 
+  width: 25%; 
+  height: 300px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,20 +87,20 @@ body {
 
 .image-left img,
 .image-right img {
-  width: 100%; /* Makes the image fill the container width */
-  height: 100%; /* Ensures the image fills the container height */
-  object-fit: cover; /* Makes sure the image maintains its aspect ratio */
-  border-radius: 10px; /* Optional: rounds the corners of the images */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for depth */
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Food Section */
 .food-section {
-  margin: 50px auto; /* Add spacing below the header */
+  margin: 50px auto; 
   padding: 20px;
-  max-width: 1200px; /* Optional: Limits the width of the section */
+  max-width: 1200px;
   text-align: center;
-  background-color: #fff; /* Makes it stand out */
+  background-color: #fff; 
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -113,9 +113,9 @@ body {
 
 .food-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
-  gap: 20px; /* Space between the grid items */
-  justify-items: center; /* Centers the content inside each grid cell */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  justify-items: center; 
 }
 
 
@@ -132,10 +132,10 @@ body {
 }
 
 .food-item img {
-  width: 200px; /* Reduced width */
-  height: 200px; /* Reduced height */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
-  margin-top: 10px; /* Adds space between the top of the food block and the image */
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
+  margin-top: 10px; 
 }
 
 .food-item h3 {
